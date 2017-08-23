@@ -8,6 +8,8 @@
 
 /* --- body --- */
 
+
+
 	.clearfix:after {
 		content: "";
 		display: block;
@@ -307,7 +309,7 @@
 	}
 
 	.port-row > .col-12 {
-		padding: 4px;
+		padding: 4px 8px;
 	}
 
 	.port-fig {
@@ -317,8 +319,20 @@
 
 	.port-figcap {
 		text-align: center;
-		padding: 5px 0;
 	    font-size: 13.5px;
+	    margin-top: 8px;
+	    margin-bottom: 8px;
+	    line-height: 17px;
+	    display: inline-block;
+	}
+
+	.port-cap-box {
+		text-align: center;
+	}
+
+	.port-cap-title {
+		margin: 0;
+		margin-bottom: 3px;
 	}
 
 	.port-img {
@@ -326,7 +340,7 @@
 		height: 100%;
 		object-fit: cover;
 		/*padding: 2px;*/
-		border: 1px solid #e1e1e1;
+		border: 2px solid #e1e1e1;
 	}
 
 /* ----------------------------
@@ -797,6 +811,8 @@
 	.hovereffect {
 	  width: 100%;
 	  height: 100%;
+	  border: 10px;
+	  border-radius: 10px;
 	  float: left;
 	  overflow: hidden;
 	  position: relative;
@@ -813,7 +829,8 @@
 	  left: 0;
 	  opacity: 0;
 	  filter: alpha(opacity=0);
-	  border: 1px solid #f05133;
+	  border-radius: 10px;
+	  border: 2px solid #f05133;
       background-color: rgba(12, 12, 12, 0.60);
 	  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
 	  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
@@ -822,6 +839,7 @@
 	.hovereffect img {
 	  display: block;
 	  position: relative;
+	  border-radius: 10px;
 	  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
 	  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
 	}
