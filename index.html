@@ -12,6 +12,8 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
+
+
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -32,6 +34,8 @@
 			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" media="all">
 
       
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
 
 		<!-- User CSS -->
 		<link rel='stylesheet' href='portfolio-style.css'>
@@ -43,6 +47,10 @@
       <link rel="shortcut icon" href="images/kc-favicon.png" sizes="16x16">
 	</head>
 	<body id='kcc-online-portfolio'>
+
+   <script>
+      AOS.init();
+   </script>
 
       
 		
@@ -63,7 +71,7 @@
 
 
 
-				<div class='row' data-spy="scroll" data-target="#kcc-nav-box">
+				<div class='row' data-spy="scroll" data-target="#kcc-nav-box" >
 					<div class='col-12 col-md-12 col-lg-3 pad-0'>
 						<div id='kcc-profile' class='profile-left-box clearfix'>
 							<div class='profile-pic-box'>
@@ -96,11 +104,11 @@
 					</div>
 
 					<div class='col-12 col-md-12 col-lg-8'>
-						<div  id='about-me' class='profile-main-box clearfix'>
+						<div  id='about-me' class='profile-main-box clearfix' >
 
 						
 
-							<div>
+							<div data-aos="fade-up" data-aos-duration="400">
 								<h3 class='section-title'>Hi, I'm Kevin!</h3>
 
 								<p class='about-me-desc'>
@@ -133,32 +141,32 @@
 										<dl class='prof-skills'>
 											<dt>HTML & CSS</dt><br>
 											<dd>
-												<div id="skill-1"><div id="skillbar-1"></div><span class='skills-pct'>90%</span></div>
+												<div id="skill-1"><div id="skillbar-1"></div><span class='skills-pct'>75%</span></div>
 											</dd>
 
-											<dt>PHP 7</dt><br>
+											<dt>PHP</dt><br>
 											<dd>
-												<div id="skill-2"><div id="skillbar-2"></div><span class='skills-pct'>85%</span></div>
+												<div id="skill-2"><div id="skillbar-2"></div><span class='skills-pct'>50%</span></div>
 											</dd>
 
 											<dt>MySQL</dt><br>
 											<dd>
-												<div id="skill-3"><div id="skillbar-3"></div><span class='skills-pct'>85%</span></div>
+												<div id="skill-3"><div id="skillbar-3"></div><span class='skills-pct'>55%</span></div>
 											</dd>
 
 											<dt>Laravel 5.4</dt><br>
 											<dd>
-												<div id="skill-4"><div id="skillbar-4"></div><span class='skills-pct'>75%</span></div>
+												<div id="skill-4"><div id="skillbar-4"></div><span class='skills-pct'>40%</span></div>
 											</dd>
 
 											<dt>JavaScript / JQuery</dt><br>
 											<dd>
-												<div id="skill-5"><div id="skillbar-5"></div><span class='skills-pct'>65%</span></div>
+												<div id="skill-5"><div id="skillbar-5"></div><span class='skills-pct'>60%</span></div>
 											</dd>
 
                                  <dt>Ajax</dt><br>
                                  <dd>
-                                    <div id="skill-6"><div id="skillbar-6"></div><span class='skills-pct'>50%</span></div>
+                                    <div id="skill-6"><div id="skillbar-6"></div><span class='skills-pct'>30%</span></div>
                                  </dd>
 										</dl>
 
@@ -167,12 +175,12 @@
 
                         <script type="text/javascript">
                            $(window).on('load', function(){
-                           $('#skillbar-1').animate({width:'90%'}, 1000);
-                           $('#skillbar-2').animate({width:'85%'}, 1000);
-                           $('#skillbar-3').animate({width:'85%'}, 1000);
-                           $('#skillbar-4').animate({width:'75%'}, 1000);
-                           $('#skillbar-5').animate({width:'65%'}, 1000);
-                           $('#skillbar-6').animate({width:'50%'}, 1000);
+                           $('#skillbar-1').animate({width:'75%'}, 1000);
+                           $('#skillbar-2').animate({width:'50%'}, 1000);
+                           $('#skillbar-3').animate({width:'55%'}, 1000);
+                           $('#skillbar-4').animate({width:'40%'}, 1000);
+                           $('#skillbar-5').animate({width:'60%'}, 1000);
+                           $('#skillbar-6').animate({width:'30%'}, 1000);
                            });
 
                         </script>
